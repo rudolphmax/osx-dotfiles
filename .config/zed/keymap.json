@@ -1,0 +1,10 @@
+[
+    {
+        "context": "Editor",
+        "bindings": {
+            "alt-down": "editor::MoveLineDown",
+            "alt-up": "editor::MoveLineUp",
+            "cmd-d": "editor::DuplicateLine"
+        }
+    }
+]

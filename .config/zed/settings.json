@@ -1,0 +1,60 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "version": "2",
+    "enabled": true,
+    "provider": {
+      "name": "openai",
+      "default_model": "gpt-4o"
+    }
+  },
+  "features": {
+    "inline_completions": false
+  },
+  "languages": {
+    "Haskell": {
+      "language_servers": [ "haskell-language-server" ]
+    }
+  },
+  "theme": "One Dark",
+  "ui_font_size": 12.5,
+  "ui_font_family": "0xProto Nerd Font Mono",
+  "buffer_font_family": "0xProto Nerd Font Mono",
+  "buffer_font_size": 12.5,
+  "tab_size": 2,
+  "hard_tabs": false,
+  "format_on_save": "off",
+  "terminal": {
+    "dock": "right",
+    "font_family": "0xProto Nerd Font Mono",
+    "font_size": 12.5
+  },
+  "project_panel": {
+    "dock": "left",
+    "git_status": true,
+    "show_hidden_files": false
+  },
+  "ensure_final_newline_on_save": true,
+  "git_gutter": "tracked_files",
+  "inlay_hints": {
+    "enabled": false,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  }
+}

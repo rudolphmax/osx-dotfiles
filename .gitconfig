@@ -1,0 +1,15 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Maximilian Rudolph
+	email = rudolph-max@gmx.net
+	signingkey = 7E17032752A29BD3
+[init]
+	defaultBranch = main
+[push]
+	default = current
+[commit]
+	gpgsign = true
