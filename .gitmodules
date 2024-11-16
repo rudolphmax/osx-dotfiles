@@ -10,3 +10,15 @@
 [submodule ".oh-my-zsh/plugins/zsh-syntax-highlighting"]
 	path = .oh-my-zsh/plugins/zsh-syntax-highlighting
 	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = git@github.com:ohmyzsh/ohmyzsh.git
+[submodule ".omz-customizations/plugins/zsh-syntax-highlighting"]
+	path = .omz-customizations/plugins/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+[submodule ".omz-customizations/plugins/zsh-autocomplete"]
+	path = .omz-customizations/plugins/zsh-autocomplete
+	url = git@github.com:marlonrichert/zsh-autocomplete.git
+[submodule ".omz-customizations/plugins/zsh-autosuggestions"]
+	path = .omz-customizations/plugins/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions.git

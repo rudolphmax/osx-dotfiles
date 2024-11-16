@@ -1,5 +1,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+zstyle ':omz:update' mode reminder
+
 plugins=(
   git
   zoxide
@@ -9,6 +11,8 @@ plugins=(
   zsh-autocomplete
   zsh-syntax-highlighting
 )
+
+ZSH_CUSTOM="$HOME/.omz-customizations"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
