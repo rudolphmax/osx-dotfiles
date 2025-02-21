@@ -121,7 +121,11 @@ export LIBRARY_PATH=/opt/homebrew/lib
 
 eval "$(zoxide init zsh)"
 
+eval `keychain --eval --agents ssh --inherit any id_rsa id_ed25519 id_vserver`
+
 export EDITOR="codium --user-data-dir"
+
+conda init "$(basename "${SHELL}")"
 
 alias cd="z"
 export PYENV_ROOT="$HOME/.pyenv"
@@ -133,3 +137,19 @@ fortune | cowsay
 echo ""
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

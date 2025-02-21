@@ -7,10 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "auto_update_extensions": {
+    "ruff": false
+  },
+  "show_inline_completions": false,
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-20240620"
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2",
     "enabled": true,
@@ -28,7 +32,7 @@
     }
   },
   "theme": "One Dark",
-  "ui_font_size": 12.5,
+  "ui_font_size": 13.0,
   "ui_font_family": "0xProto Nerd Font Mono",
   "buffer_font_family": "0xProto Nerd Font Mono",
   "buffer_font_size": 12.5,
