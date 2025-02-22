@@ -1,0 +1,28 @@
+[font]
+size = 13
+normal = { family = "0xProto Nerd Font Mono", style = "Regular" }
+
+[colors.primary]
+foreground = "#f0f0f1"
+background = "#22242a"
+  
+[colors.normal]
+black = "#1e2024"
+red = "#df3f70"
+green = "#a6dd7e"
+yellow = "#fae67e"
+blue = "#4ca493"
+magenta = "#b954e4"
+cyan = "#66dcbf"
+white = "#f0f0f1"
+
+
+[colors.bright]
+black = "#1e2024"
+red = "#df3f70"
+green = "#a6dd7e"
+yellow = "#fae67e"
+blue = "#4ca493"
+magenta = "#b954e4"
+cyan = "#66dcbf"
+white = "#f0f0f1"

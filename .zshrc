@@ -17,6 +17,11 @@ ZSH_CUSTOM="$HOME/.omz-customizations"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+bindkey "^[[1;9D" beginning-of-line
+bindkey "^[[1;9C" end-of-line
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
