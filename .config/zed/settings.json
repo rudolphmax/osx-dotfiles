@@ -10,7 +10,7 @@
   "auto_update_extensions": {
     "ruff": false
   },
-  "show_inline_completions": false,
+  "show_edit_predictions": false,
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
