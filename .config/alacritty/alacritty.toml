@@ -3,26 +3,25 @@ size = 13
 normal = { family = "0xProto Nerd Font Mono", style = "Regular" }
 
 [colors.primary]
-foreground = "#f0f0f1"
-background = "#22242a"
-  
-[colors.normal]
-black = "#1e2024"
-red = "#df3f70"
-green = "#a6dd7e"
-yellow = "#fae67e"
-blue = "#4ca493"
-magenta = "#b954e4"
-cyan = "#66dcbf"
-white = "#f0f0f1"
+foreground = "#f7f7f8"
+background = "#1e2025"
 
+[colors.normal]
+black = "#1e2025"
+red = "#f82871"
+green = "#96df71"
+yellow = "#fee56c"
+blue = "#10a793"
+magenta = "#c74cec"
+cyan = "#08e7c5"
+white = "#f7f7f8"
 
 [colors.bright]
-black = "#1e2024"
-red = "#df3f70"
-green = "#a6dd7e"
-yellow = "#fae67e"
-blue = "#4ca493"
-magenta = "#b954e4"
-cyan = "#66dcbf"
-white = "#f0f0f1"
+black = "#40434c"
+red = "#8e0f3a"
+green = "#457c38"
+yellow = "#958334"
+blue = "#1a5148"
+magenta = "#682681"
+cyan = "#008169"
+white = "#f7f7f8"
