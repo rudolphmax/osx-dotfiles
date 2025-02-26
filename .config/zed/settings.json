@@ -31,7 +31,7 @@
       "language_servers": [ "haskell-language-server" ]
     }
   },
-  "theme": "One Dark",
+  "theme": "Andromeda",
   "ui_font_size": 13.0,
   "ui_font_family": "0xProto Nerd Font Mono",
   "buffer_font_family": "0xProto Nerd Font Mono",

@@ -126,7 +126,10 @@ export LIBRARY_PATH=/opt/homebrew/lib
 
 eval "$(zoxide init zsh)"
 
-eval `keychain --eval --agents ssh --inherit any id_rsa id_ed25519 id_vserver`
+for key in `find ~/.ssh -type f -regex ".*/id_[A-za-z|0-9]*$"`;
+do
+    eval `keychain --eval --agents ssh --inherit any $key`
+done
 
 export EDITOR="codium --user-data-dir"
 
