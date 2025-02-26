@@ -1,5 +1,9 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
 zstyle ':omz:update' mode reminder
 
 plugins=(
@@ -128,7 +132,9 @@ eval "$(zoxide init zsh)"
 
 for key in `find ~/.ssh -type f -regex ".*/id_[A-za-z|0-9]*$"`;
 do
-    eval `keychain --eval --agents ssh --inherit any $key`
+    if eval `keychain --eval --agents ssh --inherit any $key -q`; then
+        echo "${RED}SSH Keychain${NC} added ${GREEN}${key}${NC}"
+    fi
 done
 
 export EDITOR="codium --user-data-dir"
