@@ -7,16 +7,26 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "debugger": {
+    "dock": "bottom"
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
   "auto_update_extensions": {
     "ruff": false
   },
-  "show_edit_predictions": false,
-  "assistant": {
+  "show_edit_predictions": true,
+  "agent": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
     },
-    "version": "2",
     "enabled": true,
     "provider": {
       "name": "openai",
@@ -31,7 +41,7 @@
       "language_servers": [ "haskell-language-server" ]
     }
   },
-  "theme": "Andromeda",
+  "theme": "One Dark",
   "ui_font_size": 13.0,
   "ui_font_family": "0xProto Nerd Font Mono",
   "buffer_font_family": "0xProto Nerd Font Mono",
